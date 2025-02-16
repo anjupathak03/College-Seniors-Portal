@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* General Styles */
 body {
     font-family: 'Arial', sans-serif;
@@ -204,3 +205,211 @@ main {
         padding: 8px;
     }
 }
+=======
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+#searchBar {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#searchBar:focus {
+    border-color: #0056b3;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#seniorList {
+    flex: 2;
+}
+
+#addSenior {
+    flex: 1;
+    order: 2; /* Default order */
+}
+
+.senior {
+    background: #e9ecef;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.senior:hover {
+    transform: scale(1.02);
+}
+
+.senior img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+    border: 3px solid #007bff;
+}
+
+.senior h3 {
+    margin: 0;
+    color: #343a40;
+    font-size: 1.5em;
+}
+
+.senior p {
+    margin: 5px 0;
+    color: #6c757d;
+}
+
+.senior a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.senior a:hover {
+    text-decoration: underline;
+}
+
+#addSenior {
+    background: #e9ecef;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#addSenior h2 {
+    margin-top: 0;
+}
+
+#seniorForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#seniorForm label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#seniorForm input {
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+#seniorForm button {
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#seniorForm button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    main {
+        flex-direction: column;
+    }
+
+    #addSenior {
+        order: 1; /* Move above senior list */
+    }
+
+    #seniorList {
+        order: 2; /* Move below add senior */
+    }
+}
+
+@media (max-width: 768px) {
+    .senior {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .senior img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    #addSenior {
+        order: 1; /* Move above senior list */
+    }
+
+    #seniorList {
+        order: 2; /* Move below add senior */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    #searchBar {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .senior {
+        padding: 15px;
+    }
+
+    #seniorForm input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    #seniorForm button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+>>>>>>> b5f5b9b (updated the images)
